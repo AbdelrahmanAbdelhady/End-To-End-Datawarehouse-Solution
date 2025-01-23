@@ -7,13 +7,13 @@
   The project involved several key steps:
 
 
-      **Modeling and building a Data Warehouse (DWH)**: Transforming the transactional database into a structured data warehouse using a star schema approach.
+**Modeling and building a Data Warehouse (DWH)**: Transforming the transactional database into a structured data warehouse using a star schema approach.
 
-      **ETL Process**: Developing an SSIS (SQL Server Integration Services) project to extract, transform, and load data from the transactional database into the data warehouse.
+**ETL Process**: Developing an SSIS (SQL Server Integration Services) project to extract, transform, and load data from the transactional database into the data warehouse.
 
-      **OLAP Cube Creation**: Designing an SSAS (SQL Server Analysis Services) project in Tabular mode to create a multidimensional cube for advanced analytics.
+**OLAP Cube Creation**: Designing an SSAS (SQL Server Analysis Services) project in Tabular mode to create a multidimensional cube for advanced analytics.
 
-      **BI Reporting**: Using Power BI to create self-service reports and dashboards for business users to explore the data and gain insights.
+**BI Reporting**: Using Power BI to create self-service reports and dashboards for business users to explore the data and gain insights.
 
 <h3>3. Source Database Overview</h3>
 ![ERD of OLTP DB](https://github.com/user-attachments/assets/78b368d1-7e97-4da8-baf8-a451a20551ad)
