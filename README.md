@@ -65,7 +65,13 @@ A date dimension was added to track historical changes and enable time-based ana
 
 **Extract**: I extracted data from the gravity_books transactional database.
 
-**Transform**: I transformed the data to fit the snowflake schema model, including normalizing dimension tables and ensuring data integrity. Special attention was given to handling the many-to-many relationship between authors and books during the transformation process.
+**Transform**: I transformed the data to fit the snowflake schema model, including normalizing dimension tables and ensuring data integrity. Special attention was given to handling the many-to-many relationship between authors and books during the transformation process. Additionally, I implemented **Slowly Changing Dimensions (SCD)** to manage changes in dimension data over time. Specifically:
+
+**Type 1 SCD**: Used for attributes where historical changes are not required (e.g., correcting typos in customer names).
+
+**Type 2 SCD**: Used for attributes where tracking historical changes is critical (e.g., changes in customer addresses or book prices). This involved creating new rows for changed data and marking old rows as inactive.
+
+
 
 **Load**: I loaded the transformed data into the Gravity_Books_DWH data warehouse.
 
@@ -87,8 +93,8 @@ Dim_Shippings ETL:
 SalesFactTable ETL:
 ![Sales_Fact_Table ETL process](https://github.com/user-attachments/assets/a49d8c9e-14d7-4d98-8d33-43a6e3c4017b)
 
-
-
+Result Fact Table:
+![Sales Fact Table](https://github.com/user-attachments/assets/06057e5e-1359-4d11-96e4-81ab9ca18460)
 
 
 
