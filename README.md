@@ -97,6 +97,84 @@ Result Fact Table:
 ![Sales Fact Table](https://github.com/user-attachments/assets/06057e5e-1359-4d11-96e4-81ab9ca18460)
 
 
+<h3>7. Analysis phase (SSAS) </h3>
+The Analysis Phase focused on exploring the data in the data warehouse (gravity_books_dwh) and generating actionable insights for the Gravity Bookstore. This phase involved the following steps:
+
+-**Data Exploration**
+**OLAP Cube Browsing**: Using the SSAS (SQL Server Analysis Services) multidimensional model, I browsed the OLAP cube to explore the data. The cube allowed for multidimensional analysis, enabling me to slice and dice data across various dimensions such as time, customer, book, and shipping method.
+
+<h3>8. Reporting and Data visualization (Power BI) </h3>
+
+The Analysis and Reporting Phase focused on exploring the data in the data warehouse (gravity_books_dwh) and generating actionable insights for the Gravity Bookstore. This phase involved the creation of interactive reports and dashboards using Power BI, which allowed business users to explore the data and gain valuable insights. Below are the key components of this phase:
+
+**Key Metrics and Insights**:
+The following key metrics were identified and analyzed to understand the bookstore's performance:
+
+**Total Number of Books**: 11.1K books are available in the bookstore's inventory.
+
+**Total Number of Authors**: 9,235 authors are associated with the books.
+
+**Total Number of Customers**: 2K customers have made purchases.
+
+**Total Books Sold**: 15.4K books have been sold.
+
+**Total Orders**: 7,546 orders have been placed.
+
+**Total Sales**: $237K in total sales revenue.
+
+**Sales Trends Over Time**:
+The report includes a visualization of the total cost of books sold by year. The data shows a steady increase in costs from 2022 to 2025, indicating growth in sales volume over time.
+
+** Order Status Analysis**:
+
+**Delivered**: 2.38K (31.55%) of orders have been successfully delivered.
+
+**Pending Delivery**: 2.13K (33.53%) of orders are pending delivery.
+
+**Delivery In Progress**: 1.64K (21.76%) of orders are currently in the delivery process.
+
+**Order Received**: 0.6K (7.96%) of orders have been received but not yet processed.
+
+**Cancelled**: 0.25K (3.34%) of orders have been cancelled.
+
+This analysis helps identify bottlenecks in the order fulfillment process and areas for improvement.
+
+**Geographical Analysis**
+Total Orders by Country: The report includes a visualization of orders by country, highlighting the top countries with the most orders:
+
+China, Indonesia, and Russia are the top three countries with the highest number of orders.
+
+Other significant markets include Brazil, Portugal, and the United States.
+
+This geographical analysis helps the bookstore understand its customer base and target marketing efforts more effectively.
+
+**Top Performing Books**
+Top 10 Sold Books: The report identifies the top 10 best-selling books, including:
+
+Gulliver's Travels
+
+Anna Karenina
+
+Salem's Lot
+
+The Brothers Karamazov
+
+The Iliad
+
+The Odyssey
+
+The Shining
+
+A Midsummer Night's Dream
+
+Collected Stories
+
+Memoirs of a Geisha
+
+This analysis helps the bookstore identify popular titles and optimize inventory management.
+
+
+
 
 
 
