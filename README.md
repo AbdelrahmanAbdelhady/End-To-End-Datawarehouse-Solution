@@ -1,7 +1,7 @@
 <h1> Gravity Books Data Warehouse Project </h1>
 <h3>1. Problem Overview</h3>
-    Gravity Bookstore is a fictional bookstore that needed a robust system to manage and analyze its data effectively. The bookstore had a transactional database (gravity_books) that stored           
-    information about books, customers, orders, and sales. However, the existing system lacked the capability to perform advanced analytics, generate insightful reports, and track historical changes       in data. The goal of this project was to design and implement a data warehouse (gravity_books_dwh) and create Business Intelligence (BI) reports to help the bookstore gain valuable insights into       its operations.
+    Gravity Bookstore is a fictional bookstore that needed a robust system to manage and analyze its data effectively. The bookstore had a transactional database (Gravity_Books) that stored           
+    information about books, customers, orders, and sales. However, the existing system lacked the capability to perform advanced analytics, generate insightful reports, and track historical changes       in data. The goal of this project was to design and implement a data warehouse (Gravity_Books_DWH) and create Business Intelligence (BI) reports to help the bookstore gain valuable insights into       its operations.
 
 <h3>2. Project Overview</h3>
   The project involved several key steps:
@@ -67,12 +67,25 @@ A date dimension was added to track historical changes and enable time-based ana
 
 **Transform**: I transformed the data to fit the snowflake schema model, including normalizing dimension tables and ensuring data integrity. Special attention was given to handling the many-to-many relationship between authors and books during the transformation process.
 
-**Load**: I loaded the transformed data into the gravity_books_dwh data warehouse.
+**Load**: I loaded the transformed data into the Gravity_Books_DWH data warehouse.
 
+Dim_Books ETL:
+![Dim_Books ETL process](https://github.com/user-attachments/assets/dfaa0a82-d57e-486a-ab8f-0e49216b1587)
 
+Dim_Author_book ETL:
+![Dim_Book_Author ETL process](https://github.com/user-attachments/assets/82cddcad-55c1-402f-8214-021d4290f874)
 
+Dim_Authors ETL:
+![Dim_Authors ETL process](https://github.com/user-attachments/assets/7f06db64-5905-4a2f-9561-8d3c49321f0f)
 
+Dim_Customers ETL:
+![Dim_Customers ETL process](https://github.com/user-attachments/assets/cd8f5f4e-bd35-4ef9-9fc0-85bc9e8808ef)
 
+Dim_Shippings ETL:
+![Dim_Shippings ETL process](https://github.com/user-attachments/assets/ad981464-4775-4b60-82bc-16f6630fd8dd)
+
+SalesFactTable ETL:
+![Sales_Fact_Table ETL process](https://github.com/user-attachments/assets/a49d8c9e-14d7-4d98-8d33-43a6e3c4017b)
 
 
 
