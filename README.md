@@ -13,7 +13,7 @@
 
 **ETL Process**: Developing an SSIS (SQL Server Integration Services) project to extract, transform, and load data from the transactional database into the data warehouse.
 
-**OLAP Cube Creation**: Designing an SSAS (SQL Server Analysis Services) project in Tabular mode to create a multidimensional cube for advanced analytics.
+**OLAP Cube Creation**: Designing an SSAS (SQL Server Analysis Services) project in multidimensional mode to create a cube for advanced analytics.
 
 **BI Reporting**: Using Power BI to create self-service reports and dashboards for business users to explore the data and gain insights.
 <hr>
