@@ -16,7 +16,9 @@
 **BI Reporting**: Using Power BI to create self-service reports and dashboards for business users to explore the data and gain insights.
 
 <h3>3. Source Database Overview</h3>
-![ERD of OLTP DB](https://github.com/user-attachments/assets/78b368d1-7e97-4da8-baf8-a451a20551ad)
+
+![ERD of OLTP DB](https://github.com/user-attachments/assets/a003941b-9026-4491-bc13-d4981a60c01c)
+
 
 The source database, `gravity_books`, is a transactional database that contains the following tables:
 - **book**: Stores information about books available in the store.
@@ -47,17 +49,25 @@ The following technologies were used in this project:
 **Power BI**: For creating self-service BI reports and dashboards.
 
 
-<h3>5. Data Warehouse Modeling<h3>
+<h3>5. Data Warehouse Modeling</h3>
     
 ![Gravity Books Data Warehouse model](https://github.com/user-attachments/assets/8cc20fa2-53cf-4a4b-941a-58eff16078bd)
 
-The data warehouse, Gravity_books_DWH , was designed using a snowflake schema approach. The snowflake schema was chosen because it effectively handles many-to-many relationships, such as the relationship between authors and books. By normalizing the dimension tables, the snowflake schema reduces data redundancy and ensures data integrity, especially in scenarios where complex relationships exist. The schema consists of:
+The data warehouse, gravity_books_dwh, was designed using a snowflake schema approach. The snowflake schema was chosen because it normalizes the dimension tables, reducing data redundancy and          improving data integrity. This schema is particularly useful when dealing with complex relationships and large datasets. The schema consists of:
 
 **Fact Tables**: Central tables that store quantitative data (e.g., sales facts).
 
 **Dimension Tables**: Surrounding tables that store descriptive attributes (e.g., customer, book, author, date dimensions). These dimensions are normalized, meaning they are split into multiple related tables to eliminate redundancy and handle complex relationships.
 
 A date dimension was added to track historical changes and enable time-based analysis.
+
+<h3>6. ETL Process (SSIS) </h3>
+
+**Extract**: I extracted data from the gravity_books transactional database.
+
+**Transform**: I transformed the data to fit the snowflake schema model, including normalizing dimension tables and ensuring data integrity. Special attention was given to handling the many-to-many relationship between authors and books during the transformation process.
+
+**Load**: I loaded the transformed data into the gravity_books_dwh data warehouse.
 
 
 
