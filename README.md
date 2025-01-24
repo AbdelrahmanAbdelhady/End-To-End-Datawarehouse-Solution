@@ -3,6 +3,8 @@
     Gravity Bookstore is a fictional bookstore that needed a robust system to manage and analyze its data effectively. The bookstore had a transactional database (Gravity_Books) that stored           
     information about books, customers, orders, and sales. However, the existing system lacked the capability to perform advanced analytics, generate insightful reports, and track historical changes       in data. The goal of this project was to design and implement a data warehouse (Gravity_Books_DWH) and create Business Intelligence (BI) reports to help the bookstore gain valuable insights into       its operations.
 
+<hr>
+
 <h3>2. Project Overview</h3>
   The project involved several key steps:
 
@@ -14,6 +16,7 @@
 **OLAP Cube Creation**: Designing an SSAS (SQL Server Analysis Services) project in Tabular mode to create a multidimensional cube for advanced analytics.
 
 **BI Reporting**: Using Power BI to create self-service reports and dashboards for business users to explore the data and gain insights.
+<hr>
 
 <h3>3. Source Database Overview</h3>
 
@@ -37,6 +40,8 @@ The source database, `gravity_books`, is a transactional database that contains 
 - **order_history**: Tracks the history of orders (e.g., ordered, cancelled, delivered).
 - **order_status**: Lists possible order statuses.
 
+<hr>
+
 <h3>4. Technologies Used Overview</h3>
 The following technologies were used in this project:
 
@@ -48,6 +53,7 @@ The following technologies were used in this project:
 
 **Power BI**: For creating self-service BI reports and dashboards.
 
+<hr>
 
 <h3>5. Data Warehouse Modeling</h3>
     
@@ -61,6 +67,8 @@ The data warehouse, gravity_books_dwh, was designed using a snowflake schema app
 
 A date dimension was added to track historical changes and enable time-based analysis.
 
+<hr>
+
 <h3>6. ETL Process (SSIS) </h3>
 
 **Extract**: I extracted data from the gravity_books transactional database.
@@ -70,8 +78,6 @@ A date dimension was added to track historical changes and enable time-based ana
 **Type 1 SCD**: Used for attributes where historical changes are not required (e.g., correcting typos in customer names).
 
 **Type 2 SCD**: Used for attributes where tracking historical changes is critical (e.g., changes in customer addresses or book prices). This involved creating new rows for changed data and marking old rows as inactive.
-
-
 
 **Load**: I loaded the transformed data into the Gravity_Books_DWH data warehouse.
 
@@ -96,14 +102,22 @@ SalesFactTable ETL:
 Result Fact Table:
 ![Sales Fact Table](https://github.com/user-attachments/assets/06057e5e-1359-4d11-96e4-81ab9ca18460)
 
+<hr>
 
 <h3>7. Analysis phase (SSAS) </h3>
+
+![Analysis Cube](https://github.com/user-attachments/assets/6891fceb-c14c-4aac-ba56-445ade594e94)
+
 The Analysis Phase focused on exploring the data in the data warehouse (gravity_books_dwh) and generating actionable insights for the Gravity Bookstore. This phase involved the following steps:
 
 -**Data Exploration**
 **OLAP Cube Browsing**: Using the SSAS (SQL Server Analysis Services) multidimensional model, I browsed the OLAP cube to explore the data. The cube allowed for multidimensional analysis, enabling me to slice and dice data across various dimensions such as time, customer, book, and shipping method.
 
+<hr>
+
 <h3>8. Reporting and Data visualization (Power BI) </h3>
+
+![Gravity Books Report](https://github.com/user-attachments/assets/432d20c2-a07a-45e0-9990-b0a1d3a02c73)
 
 The Analysis and Reporting Phase focused on exploring the data in the data warehouse (gravity_books_dwh) and generating actionable insights for the Gravity Bookstore. This phase involved the creation of interactive reports and dashboards using Power BI, which allowed business users to explore the data and gain valuable insights. Below are the key components of this phase:
 
@@ -156,13 +170,19 @@ Gulliver's Travels/Anna Karenina/Salem's Lot/The Brothers Karamazov/The Iliad/Th
 
 This analysis helps the bookstore identify popular titles and optimize inventory management.
 
+<hr>
 
-<h3>8. Conclusion</h3>
+<h3>9. Conclusion</h3>
 
 The Gravity Books Data Warehouse project was a highly rewarding experience, offering a deep dive into ETL (Extract, Transform, Load) processes and data warehousing best practices. I implemented advanced concepts like the **snowflake schema** to manage complex relationships (e.g., many-to-many between authors and books) and **Slowly Changing Dimensions (SCD)** to track historical changes in dimension data. Using **MS SQL** Server for schema design and **SSIS** for ETL, I transformed the transactional database into a well-structured data warehouse. Key steps included normalizing dimension tables, applying SCD (Type 1 and Type 2), and creating a **fact table** to track sales data efficiently.
 
 
 In the final phase, I developed interactive **Power BI** reports and dashboards, enabling business users to analyze sales trends, order fulfillment, and top-performing books. This project enhanced my skills in data warehousing, ETL, and business intelligence, showcasing the power of structured data management in driving data-driven decisions. The Gravity Books Data Warehouse project stands as a testament to the impact of well-designed data solutions on business operations.
+
+<hr>
+<hr>
+
+**I welcome feedback, suggestions, and contributions to improve this project! Feel free to reach out or collaborate to make it even better. 😊**
 
 
 
