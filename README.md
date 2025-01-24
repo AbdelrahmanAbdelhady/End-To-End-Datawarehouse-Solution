@@ -125,7 +125,7 @@ The following key metrics were identified and analyzed to understand the booksto
 **Sales Trends Over Time**:
 The report includes a visualization of the total cost of books sold by year. The data shows a steady increase in costs from 2022 to 2025, indicating growth in sales volume over time.
 
-** Order Status Analysis**:
+**Order Status Analysis**:
 
 **Delivered**: 2.38K (31.55%) of orders have been successfully delivered.
 
@@ -139,7 +139,7 @@ The report includes a visualization of the total cost of books sold by year. The
 
 This analysis helps identify bottlenecks in the order fulfillment process and areas for improvement.
 
-**Geographical Analysis**
+**Geographical Analysis**:
 Total Orders by Country: The report includes a visualization of orders by country, highlighting the top countries with the most orders:
 
 China, Indonesia, and Russia are the top three countries with the highest number of orders.
@@ -148,31 +148,21 @@ Other significant markets include Brazil, Portugal, and the United States.
 
 This geographical analysis helps the bookstore understand its customer base and target marketing efforts more effectively.
 
-**Top Performing Books**
+**Top Performing Books**:
 Top 10 Sold Books: The report identifies the top 10 best-selling books, including:
 
-Gulliver's Travels
-
-Anna Karenina
-
-Salem's Lot
-
-The Brothers Karamazov
-
-The Iliad
-
-The Odyssey
-
-The Shining
-
-A Midsummer Night's Dream
-
-Collected Stories
-
-Memoirs of a Geisha
+Gulliver's Travels/Anna Karenina/Salem's Lot/The Brothers Karamazov/The Iliad/The Odyssey/The Shining/A Midsummer Night's Dream/Collected Stories
+/Memoirs of a Geisha
 
 This analysis helps the bookstore identify popular titles and optimize inventory management.
 
+
+<h3>8. Conclusion</h3>
+
+The Gravity Books Data Warehouse project was a highly rewarding experience, offering a deep dive into ETL (Extract, Transform, Load) processes and data warehousing best practices. I implemented advanced concepts like the **snowflake schema** to manage complex relationships (e.g., many-to-many between authors and books) and **Slowly Changing Dimensions (SCD)** to track historical changes in dimension data. Using **MS SQL** Server for schema design and **SSIS** for ETL, I transformed the transactional database into a well-structured data warehouse. Key steps included normalizing dimension tables, applying SCD (Type 1 and Type 2), and creating a **fact table** to track sales data efficiently.
+
+
+In the final phase, I developed interactive **Power BI** reports and dashboards, enabling business users to analyze sales trends, order fulfillment, and top-performing books. This project enhanced my skills in data warehousing, ETL, and business intelligence, showcasing the power of structured data management in driving data-driven decisions. The Gravity Books Data Warehouse project stands as a testament to the impact of well-designed data solutions on business operations.
 
 
 
